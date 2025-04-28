@@ -10,7 +10,6 @@ interface ActionItemsProps {
 }
 
 const ActionItems: React.FC<ActionItemsProps> = ({ meetingData, updateActionItem }) => {
-  // Group action items by owner
   const actionItemsByOwner: Record<string, ActionItem[]> = {};
   meetingData.participants.forEach(participant => {
     actionItemsByOwner[participant] = [];
