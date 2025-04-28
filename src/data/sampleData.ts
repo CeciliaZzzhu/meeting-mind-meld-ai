@@ -1,8 +1,7 @@
-
 import { MeetingData } from "../types/meeting";
 
 export const sampleMeetingData: MeetingData = {
-  meetingTitle: "Sprint 19 Planning Meeting",
+  meetingTitle: "Memorize meetings",
   date: "2025-04-27",
   participants: ["PM", "Engineer_1", "QA", "Engineer_2", "Designer", "Product Lead", "Marketing", "Data"],
   topics: [
