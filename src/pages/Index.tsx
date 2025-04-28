@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { sampleMeetingData } from '../data/sampleData';
 import { ActionItem } from '../types/meeting';
@@ -14,6 +13,7 @@ import ActionItems from '../components/ActionItems';
 import Decisions from '../components/Decisions';
 import Issues from '../components/Issues';
 import FollowUp from '../components/FollowUp';
+import FileUpload from '../components/FileUpload';
 
 const Index: React.FC = () => {
   const [activeTab, setActiveTab] = useState('summary');
@@ -66,7 +66,9 @@ const Index: React.FC = () => {
   return (
     <div className="container mx-auto p-4 max-w-6xl">
       <Header meetingData={meetingData} />
-      
+      <div className="mb-6">
+        <FileUpload />
+      </div>
       <TabNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
       
       <div className="bg-white rounded-lg shadow-lg p-6">
